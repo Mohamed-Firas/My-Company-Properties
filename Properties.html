@@ -1,0 +1,265 @@
+  <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Properties</title>
+
+</head>
+<body dir="rtl">
+  
+  <style>
+    body{ 
+         background-color: #1f242d;
+    }
+</style>
+    <header>
+        <div class="nav-links">
+            <a href="home.html" class="page-About-us">Home</a>
+            <a href="aboutus.html" class="page-About-us">About Us</a>
+        </div>
+    </header>
+    <div class="akar">  
+        <h1  >    "العقارات"  </h1>
+    </div>
+
+    <table border="1" class="tab2">
+      <tr>
+        <th>المدينة</th>
+        <th>تفاصيل</th>
+        <th>الايجار الشهري</th>
+        <th> اظهار التفاصيل</th>
+        <th>اختيار</th>
+      </tr>
+      <tr>
+      <td>دمشق</td>
+      <td>  مكتب تجاري المساحة الكلية:	30 م2</td>
+      <td>600000 ل.س</td>
+      <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+        <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow1" style="display: none;">      </td>
+      <td><input type="radio" class="selectBtn" name="property" data-city="دمشق" data-details="   مكتب تجاري المساحة الكلية:	30 م2   " data-price="600000 ل.س">اختيار</input></td>
+  </tr>
+    <tr class="extraDetailsRow">
+      <td colspan="5">
+        <div class="propertyDetails" id="detailsWindow1">
+                  <h2>تفاصيل المكتب في دمشق</h2>
+          <h1>المنطقة: شارع الحمراء _ الطابق الرابع</h1>
+          <h1>الملكية: 	طابو أخضر- 2400 سهم _  له مصعد  _ حالة البناء: جاهز</h1>
+          <h2><img src="images/1.jpeg">
+            <img src="images/2.jpeg">
+            <img src="images/3.jpeg"></h2>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>حلب</td>
+      <td>  منزل مفروش 100 م</td>
+      <td>250000 ل.س</td>
+      <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+        <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow2" style="display: none;">      </td>
+      <td><input type="radio" class="selectBtn" name="property" data-city="حلب" data-details="  منزل مفروش 100 م   " data-price="250000 ل.س">اختيار</input></td>
+    </tr>
+    <tr class="extraDetailsRow">
+      <td colspan="5">
+        <div class="propertyDetails" id="detailsWindow2">
+          <h2>تفاصيل المنزل في حلب</h2>
+          <h1>المنطقة: 	الاكرمية على الشارع الرئيسي المسبح الاولمبي _ الطابق الرابع _ عدد الغرف: 3</h1>
+          <h1>الملكية: 	طابو أخضر- 2400 سهم</h1>
+          <h2><img src="images/4.jpeg">
+          <img src="images/5.jpeg"></h2>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td> ريف دمشق  </td>
+      <td>شقة فارغة  120 م</td>
+      <td>400000 ل.س</td>
+      <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+        <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow3" style="display: none;">      </td> 
+     <td><input type="radio" class="selectBtn" name="property" data-city="ريف دمشق " data-details="  شقة فارغة  120 م  " data-price="400000 ل.س">اختيار</input></td>
+    </tr>
+    <tr class="extraDetailsRow">
+      <td colspan="5">
+        <div class="propertyDetails" id="detailsWindow3">
+          <h2>تفاصيل الشقة في ريف دمشق</h2>
+          <h1>المنطقة: جرمانا-توسع الجناين _ طابق الخامس</h1>
+          <h1>الملكية: طابو أخضر- 2400 سهم _ حالة البناء:	جاهز</h1>
+          <h2><img src="images/6.jpeg">
+            <img src="images/7.jpeg"></h2>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>طرطوس</td>
+      <td> شقة نوم وصالون طابق ارضي. أكساء مقبول</td>
+      <td>700000 ل.س</td>
+      <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+        <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow4" style="display: none;">      </td> 
+     <td><input type="radio" class="selectBtn" name="property" data-city="طرطوس" data-details="   شقة نوم وصالون طابق ارضي. أكساء مقبول  " data-price="700000 ل.س">اختيار</input></td>
+    </tr>
+    <tr class="extraDetailsRow">
+      <td colspan="5">
+        <div class="propertyDetails" id="detailsWindow4">
+          <h2>تفاصيل الشقة في طرطوس</h2>
+          <h1>المنطقة: طرطوس جمعية البلدية_ طابق: ارضي _ عدد غرف النوم : 2 _ عدد البلكونات : 3</h1>
+          <h1>الملكية: طابو أخضر- 2400 سهم _ حالة البناء:	جاهز</h1>
+          <h2><img src="images/8.jpg">
+            <img src="images/9.jpg">
+            <img src="images/10.jpg"></h2>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>حلب</td>
+      <td>منزل 3 غرف وموزع 180م</td>
+      <td>850000 ل.س</td>
+      <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+        <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow5" style="display: none;">      </td>
+     <td><input type="radio" class="selectBtn" name="property" data-city="حلب" data-details=" منزل 3 غرف وموزع 180م   " data-price="850000 ل.س">اختيار</input></td>
+    </tr>
+    <tr class="extraDetailsRow">
+      <td colspan="5">
+        <div class="propertyDetails" id="detailsWindow5">
+          <h2>تفاصيل المنزل في حلب</h2>
+          <h1>المنطقة:  حلب الجديده بجمعيه النفط  _ الطابق الثاني</h1>
+          <h1>الملكية: طابو أخضر- 2400 سهم _ اكساء سوبر ديلوكس</h1>
+          <h2><img src="images/11.jpeg">
+            <img src="images/12.jpeg">
+            <img src="images/13.jpeg"></h2>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>دمشق</td>
+      <td> فيلا مضايا الشارع العام 500م </td>
+      <td>1500000 ل.س</td>
+      <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+        <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow6" style="display: none;">      </td> 
+     <td><input type="radio" class="selectBtn" name="property" data-city="دمشق" data-details="   فيلا مضايا الشارع العام 500م   " data-price="1500000 ل.س">اختيار</input></td>
+    </tr>
+    <tr class="extraDetailsRow">
+      <td colspan="5">
+        <div class="propertyDetails" id="detailsWindow6">
+          <h2>تفاصيل الفيلا في دمشق</h2>
+          <h1>المنطقة:  مضايا الشارع العام _ عدد غرف النوم: 6 _ غرف الصالون: 1</h1>
+          <h1>الملكية: طابو أخضر- 2400 سهم _ مفروشة </h1>
+          <h2><img src="images/14.jpeg">
+            <img src="images/15.jpeg">
+            <img src="images/16.jpeg"></h2>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>طرطوس</td>
+      <td>مـحـل تـجـاري . مـسـاحــة 35 م </td>
+      <td>350000 ل.س</td>
+      <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+        <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow7" style="display: none;">      </td>
+      <td><input type="radio" class="selectBtn" name="property" data-city="طرطوس" data-details="مـحـل تـجـاري . مـسـاحــة 35 م    " data-price="350000 ل.س">اختيار</input></td>
+    </tr>
+    <tr class="extraDetailsRow">
+      <td colspan="5">
+        <div class="propertyDetails" id="detailsWindow7">
+          <h2>تفاصيل المحل في طرطوس</h2>
+          <h1>المنطقة: شـارع الـوكـالات _ الطابق الثاني</h1>
+          <h1>الملكية: طابو أخضر- 2400 سهم _ اكساء جديد</h1>
+          <h2><img src="images/17.jpeg">
+            <img src="images/18.jpeg">
+            <img src="images/19.jpeg"></h2>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>طرطوس</td>
+      <td>كافيه العقارية القديمة 120 م </td>
+      <td>450000 ل.س</td>
+      <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+        <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow8" style="display: none;">      </td> 
+     <td><input type="radio" class="selectBtn" name="property" data-city="طرطوس" data-details="  كافيه العقارية القديمة 120 م   " data-price="450000 ل.س">اختيار</input></td>
+    </tr>
+    <tr class="extraDetailsRow">
+      <td colspan="5">
+        <div class="propertyDetails" id="detailsWindow8">
+          <h2>تفاصيل المقهى في طرطوس</h2>
+          <h1>المنطقة:العقارية القديمة _ الطابق: أرضي منخفض</h1>
+          <h1>الملكية: طابو أخضر- 2400 سهم _  حالة البناء:	جاهز</h1>
+          <h2><img src="images/20.jpeg">
+            <img src="images/21.jpeg">
+            <img src="images/22.jpeg"></h2>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>اللاذقية</td>
+      <td>شقة  في حي الأميركان قرب مشفى السوري العقار يصلح لأي عمل تجاري المساحه 235 م٢  </td>
+      <td>300000 ل.س</td>
+      <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+        <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow9" style="display: none;">      </td> 
+     <td><input type="radio" class="selectBtn" name="property" data-city="اللاذقية" data-details="  شقة  في حي الأميركان قرب مشفى السوري العقار يصلح لأي عمل تجاري المساحه 235 م٢   " data-price="300000 ل.س">اختيار</input></td>
+    </tr>
+    <tr class="extraDetailsRow">
+      <td colspan="5">
+        <div class="propertyDetails" id="detailsWindow9">
+          <h2>تفاصيل الشقة في اللاذقية</h2>
+          <h1>المنطقة:  حي الأميركان قرب مشفى السوري _  عدد البلكونات:	1 _ غرف النوم:	3</h1>
+          <h1>الملكية: طابو أخضر- 2400 سهم _ حالة البناء:	جاهز </h1>
+          <h2><img src="images/23.jpeg">
+            <img src="images/24.jpeg">
+            <img src="images/25.jpeg"></h2>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>دمشق</td>
+      <td>   شقة سكنية في منطقة الميسات جانب مطعم بوز الجدي المساحة 100 متر مربع </td>
+      <td>800000 ل.س</td>
+      <td>          <label style="display: inline-block; width: 20px; height: 20px; border: 1px solid #000;">
+        <input type="radio" name="detailsRadio" class="detailsBtn" data-target="detailsWindow10" style="display: none;">      </td>
+      <td><input type="radio" class="selectBtn" name="property" data-city="دمشق" data-details="  شقة سكنية في منطقة الميسات جانب مطعم بوز الجدي المساحة 100 متر مربع    " data-price="800000 ل.س">اختيار</input></td>
+    </tr>
+    <tr class="extraDetailsRow">
+      <td colspan="5">
+        <div class="propertyDetails" id="detailsWindow10">
+          <h2>تفاصيل الشقة في دمشق</h2>
+          <h1>المنطقة:  جانب مطعم بوز الجدي _ الطابق الأول</h1>
+          <h1>الملكية: طابو أخضر- 2400 سهم _   غرف النوم:	2 _ له مصعد</h1>
+          <h2><img src="images/26.jpeg">
+            <img src="images/27.jpeg">
+            <img src="images/28.jpeg"></h2>
+        </div>
+      </td>
+    </tr>
+  </table>
+    <button id="continueBtn">متابعة</button>
+    <div id="customerInfo">
+
+      <label>:FullName</label>
+        <input type="text" id="fullName" placeholder="fullName" class="fullName">
+        <label>:NationalId</label>
+        <input type="text" id="nationalId" placeholder="NationalId" class="NationalId" required>
+        <label>:Birthdate</label>
+        <input type="date" id="birthdate" placeholder="Birthdate" class="Birthdate">
+        <label>:MobileNumber</label>
+        <input type="tel" id="mobileNumber" placeholder="MobileNumber" class="MobileNumber">
+        <label>:Email</label>
+        <input type="email" id="email" placeholder="Email" class="email">
+
+
+        <label>:CAPTCHA</label>
+        <input type="text" id="captchaInput" placeholder="CAPTCHA">
+        <img id="captchaImage" alt="CAPTCHA">
+        <button class="captcha-button" onclick="refreshCaptcha()">تحديث CAPTCHA</button>
+        <br> 
+
+
+        
+        <button id="submitBtn">إرسال</button>
+      </div>
+
+      <script src="jquery-3.7.1.min.js"></script>
+    <script src="myFunctions.js"> </script>
+</body>
+</html>
